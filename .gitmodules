@@ -1,0 +1,6 @@
+[submodule "/home/ubuntu/dotfiles-ropable/vim/bundle/vim-pathogen"]
+	path = ~/dotfiles-ropable/vim/bundle/vim-pathogen
+	url = git://github.com/tpope/vim-pathogen.git
+[submodule "/home/ubuntu/dotfiles-ropable/vim/bundle/ctrlp.vim"]
+	path = ~/dotfiles-ropable/vim/bundle/ctrlp.vim
+	url = git://github.com/kien/ctrlp.vim.git
