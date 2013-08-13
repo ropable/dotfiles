@@ -1,0 +1,10 @@
+[user]
+    email = ashley@ropable.com
+    name = Ashley Felton
+[color]
+    ui = true
+[diff]
+    tool = vimdiff
+[alias]
+    s = status
+    l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
