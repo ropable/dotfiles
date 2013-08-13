@@ -1,0 +1,11 @@
+[ui]
+username = Ashley Felton <ashley@ropable.com>
+verbose = True
+merge = vimdiff
+
+[extensions]
+graphlog =
+
+[merge-tools]
+vimdiff.executable = vim
+vimdiff.args = -d $base $local $output $other +close +close
