@@ -18,6 +18,9 @@ nnoremap ` '
 " Remap Esc to ;; for quicker escaping - two semicolons are easy to type
 :imap ;; <Esc>
 
+" Set vim to never open files readonly.
+set noro
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " User interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -50,8 +53,8 @@ autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 " Turn on line numbering
 set number
 
-" Set vertical column at 100 chars
-set colorcolumn=100
+" Set vertical column at 80 chars
+set colorcolumn=80
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pathogen plugins
