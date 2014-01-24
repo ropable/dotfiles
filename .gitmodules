@@ -1,5 +1,5 @@
 [submodule "pathogen"]
-	path = vim
+	path = pathogen
 	url = https://github.com/tpope/vim-pathogen.git
 	branch = master
 [submodule "bundle/python-mode"]
