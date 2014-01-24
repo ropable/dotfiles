@@ -5,7 +5,7 @@ rm -r ~/.vim/bundle
 rm -r ~/.vim
 rm ~/.vimrc
 ln -s "$DIR/vimrc" ~/.vimrc
-ln -s "$DIR/pathogen" ~/.vim
+ln -s "$DIR/vim-pathogen" ~/.vim
 ln -s "$DIR/bundle" ~/.vim/bundle
 rm ~/.jshintrc && rm ~/.jshintignore
 ln -s "$DIR/jshintrc" ~/.jshintrc && ln -s "$DIR/jshintignore" ~/.jshintignore
