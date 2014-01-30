@@ -191,9 +191,17 @@ set foldnestmax=10          "deepest fold is 10 levels
 set nofoldenable            "don't fold by default
 set foldlevel=1             "this is just what i use
 
-" ========== Plugin Settings =========="
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mapping to NERDTree
 nnoremap <C-n> :NERDTreeToggle<cr>
 " Tagbar key bindings."
 nmap <leader>l <ESC>:TagbarToggle<cr>
 imap <leader>l <ESC>:TagbarToggle<cr>i
+
+" python-mode plugin provides auto-completion (via rope).
+" These lines close the Omni-Completion tip window when a selection is
+" made, on movement in insert mode or when leaving insert mode.
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
