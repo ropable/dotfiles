@@ -2,6 +2,7 @@
 	path = vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
 	branch = master
+    ignore = dirty
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode.git
