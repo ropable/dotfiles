@@ -203,5 +203,6 @@ imap <leader>l <ESC>:TagbarToggle<cr>i
 " python-mode plugin provides auto-completion (via rope).
 " These lines close the Omni-Completion tip window when a selection is
 " made, on movement in insert mode or when leaving insert mode.
+" https://stackoverflow.com/questions/3105307/how-do-you-automatically-remove-the-preview-window-after-autocompletion-in-vim
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
