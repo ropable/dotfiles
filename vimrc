@@ -206,3 +206,6 @@ imap <leader>l <ESC>:TagbarToggle<cr>i
 " https://stackoverflow.com/questions/3105307/how-do-you-automatically-remove-the-preview-window-after-autocompletion-in-vim
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+" vim-javascript plugin config
+let javascript_enable_domhtmlcss = 1
