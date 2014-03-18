@@ -1,5 +1,12 @@
 A half-assed attempt to get my dotfiles organised and version-controlled.
 
+# Installation
+
+Clone the repo, then run:
+
+    git submodule update --init
+    ./install.sh
+
 # Adding a vim plugin as a submodule
 
     git submodule add -f -b master https://github.com/scrooloose/nerdtree.git ./bundle/nerdtree
