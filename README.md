@@ -4,17 +4,12 @@ A half-assed attempt to get my dotfiles organised and version-controlled.
 
 Clone the repo, then run:
 
-    git submodule update --init
     ./install.sh
 
-# Adding a vim plugin as a submodule
+# Janus
 
-    git submodule add -f -b master https://github.com/scrooloose/nerdtree.git ./bundle/nerdtree
+I'm using [Janus](https://github.com/carlhuda/janus) to handle most of my Vim customisation now. The relevant portions of my vimrc are now moved into the vimrc.before and vimrc.after files.
 
 # JavaScript hinting
 
 Refer to [this StackOverflow post](http://stackoverflow.com/questions/473478/vim-jslint).
-
-# Git Submodule HowTo
-
-Refer to <http://blog.jacius.info/git-submodule-cheat-sheet/>

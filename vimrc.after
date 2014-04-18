@@ -42,3 +42,9 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set smarttab
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Mapping to NERDTree
+nnoremap <C-n> :NERDTreeToggle<cr>
