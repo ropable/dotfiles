@@ -1,0 +1,44 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Fast saving
+nmap <leader>w :w!<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colors and Fonts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Delek colour scheme
+colorscheme delek
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Moving around, tabs and buffers
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Useful when moving across long lines
+map j gj
+map k gk
+
+" Map space to / (search) and c-space to ? (backwards search)
+map <space> /
+map <c-space> ?
+map <silent> <leader><cr> :noh<cr>
+
+" Smart way to move btw. windows
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
+" Tab configuration
+map <leader>tn :tabnew! %<cr>
+map <leader>te :tabedit
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Text, tab and indent related
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set smarttab
