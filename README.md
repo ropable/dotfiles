@@ -2,13 +2,21 @@ A half-assed attempt to get my dotfiles organised and version-controlled.
 
 # Installation
 
-Clone the repo, then run:
+I'm using [Janus](https://github.com/carlhuda/janus) to handle most of my
+Vim customisation now. The relevant portions of my vimrc are now moved into
+the vimrc.before and vimrc.after files.
 
-    ./install.sh
+To install Janus, use the [automatic
+installer](https://github.com/carlhuda/janus/blob/master/bootstrap.sh),
+which backs up any Vim files found in your home folder and installs
+Janus.
 
-# Janus
-
-I'm using [Janus](https://github.com/carlhuda/janus) to handle most of my Vim customisation now. The relevant portions of my vimrc are now moved into the vimrc.before and vimrc.after files.
+```bash
+$ curl -Lo- https://bit.ly/janus-bootstrap | bash
+$ git clone git@bitbucket.org:ropable/dotfiles.git
+$ cd dotfiles
+$ ./install.sh
+```
 
 # JavaScript hinting
 
