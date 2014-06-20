@@ -15,9 +15,6 @@ nmap <leader>w :w!<cr>
 nnoremap ' `
 nnoremap ` '
 
-" Remap Esc to ;; for quicker escaping - two semicolons are easy to type
-:imap ;; <Esc>
-
 " Set vim to never open files readonly.
 set noro
 

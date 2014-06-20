@@ -5,6 +5,9 @@
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" Remap Esc to ;; for quicker escaping - two semicolons are easy to type
+:imap ;; <Esc>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
