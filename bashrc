@@ -108,3 +108,6 @@ export PROJECT_HOME=$HOME/projects
 source /usr/local/bin/virtualenvwrapper.sh
 export PIP_VIRTUALENV_BASE=WORKON_HOME
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
+
+# Launch byobu
+_byobu_sourced=1 . /usr/bin/byobu-launch
