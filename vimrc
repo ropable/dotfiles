@@ -206,3 +206,8 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 " vim-javascript plugin config
 let javascript_enable_domhtmlcss = 1
+
+" python-flake8 plugin
+let g:flake8_ignore="E501,W293"
+let g:flake8_max_line_length=100
+autocmd BufWritePost *.py call Flake8()

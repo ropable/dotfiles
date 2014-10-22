@@ -47,18 +47,6 @@ set tabstop=4
 set smarttab
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugin Settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Mapping to NERDTree
-nnoremap <C-n> :NERDTreeToggle<cr>
-" python-flake8 plugin
-let g:flake8_ignore="E501,W293"
-let g:flake8_max_line_length=100
-" Run flake8 automatically on writing a .py file.
-autocmd BufWritePost *.py call Flake8()
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " User interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove any trailing whitespace that is in the file

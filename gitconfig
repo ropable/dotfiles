@@ -3,8 +3,11 @@
     name = Ashley Felton
 [color]
     ui = true
-[diff]
+[merge]
     tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
 [alias]
     s = status
     l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
