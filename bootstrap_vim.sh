@@ -7,4 +7,4 @@ curl -Lo- https://bit.ly/janus-bootstrap | bash
 mkdir ~/.janus
 # Install vim-flake8
 cd ~/.janus
-git clone git@github.com:nvie/vim-flake8.git
+git clone https://github.com/nvie/vim-flake8.git
