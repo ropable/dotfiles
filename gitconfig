@@ -3,6 +3,8 @@
     name = Ashley Felton
 [color]
     ui = true
+[core]
+    editor = vim
 [merge]
     tool = vimdiff
 	conflictstyle = diff3
