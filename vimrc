@@ -44,14 +44,9 @@ set scrolloff=3
 " Toggle trailing whitespace and tabs visible.
 set listchars=tab:>-,trail:·,eol:$
 "nmap <silent> <leader>s :set nolist!<CR>
-" Remove any trailing whitespace that is in the file
-autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 " Turn on line numbering
 set number
-
-" Set vertical column at 80 chars
-set colorcolumn=80
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Pathogen plugins
