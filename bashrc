@@ -111,3 +111,6 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
 
 # Launch byobu
 _byobu_sourced=1 . /usr/bin/byobu-launch
+
+# Go settings
+export GOPATH=$HOME/go
