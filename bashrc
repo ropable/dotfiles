@@ -114,4 +114,4 @@ _byobu_sourced=1 . /usr/bin/byobu-launch
 
 # Go settings
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
