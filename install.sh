@@ -19,3 +19,5 @@ ln -s "$DIR/hgrc" ~/.hgrc
 # Install bash alias from alias.sh
 rm ~/.bash_aliases
 wget -q -O - "$@" https://alias.sh/user/603/alias >> ~/.bash_aliases
+rm ~/.pypirc
+ln -s "$DIR/pypirc" ~/.pypirc
