@@ -21,3 +21,5 @@ rm ~/.bash_aliases
 wget -q -O - "$@" https://alias.sh/user/603/alias >> ~/.bash_aliases
 rm ~/.pypirc
 ln -s "$DIR/pypirc" ~/.pypirc
+rm ~/.bash_aliases
+ln -s "$DIR/bash_aliases" ~/.bash_aliases

@@ -18,8 +18,7 @@ of bootstrap scripts together):
 $ cd ~
 $ sudo apt-get update && sudo apt-get install byobu vim git mercurial curl python-software-properties rake
 $ wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py && sudo python get-pip.py && sudo pip install virtualenv virtualenvwrapper
-$ wget -q -O - "$@" https://alias.sh/user/603/alias >> ~/.bash_aliases
-$ mcd .ssh && ssh-keygen -f id_rsa -t rsa -N ''
+$ mkdir .ssh && cd .ssh && ssh-keygen -f id_rsa -t rsa -N ''
 $ cd ~
 $ curl -Lo- https://bit.ly/janus-bootstrap | bash
 $ git clone git@bitbucket.org:ropable/dotfiles.git
