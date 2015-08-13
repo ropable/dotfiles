@@ -55,15 +55,15 @@ call pathogen#infect()
 call pathogen#helptags()
 syntax on
 filetype plugin indent on
-let g:airline_enable_fugitive=0
-let g:airline_enable_syntastic=0
-let g:airline_theme='dark'
+let g:airline#extensions#tabline#enabled=1
 " put filetype in fifth section
 let g:airline_section_y="%Y"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable 256 colours
+set t_Co=256
 " Enable syntax highlighting
 syntax enable
 " Delek colour scheme

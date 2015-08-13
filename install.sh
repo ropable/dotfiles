@@ -2,12 +2,6 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 rm ~/.bashrc
 ln -s "$DIR/bashrc" ~/.bashrc
 # Switched out for using Janus instead of a bunch of Git submodules.
-#rm -r ~/.vim/bundle
-#rm -r ~/.vim
-#rm ~/.vimrc
-#ln -s "$DIR/vimrc" ~/.vimrc
-#ln -s "$DIR/vim-pathogen" ~/.vim
-#ln -s "$DIR/bundle" ~/.vim/bundle
 rm ~/.vimrc.before && rm ~/.vimrc.after
 ln -s "$DIR/vimrc.before" ~/.vimrc.before && ln -s "$DIR/vimrc.after" ~/.vimrc.after
 rm ~/.jshintrc && rm ~/.jshintignore

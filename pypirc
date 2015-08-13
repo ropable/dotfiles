@@ -10,3 +10,4 @@ username = ropable
 [pypi]
 repository = https://pypi.python.org/pypi
 username = ropable
+password = IAmTesting69
