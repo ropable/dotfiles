@@ -1,18 +1,25 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+" Map leader to , as this is faster to type
+let mapleader = ","
+let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
-
 " Remap Esc to ;; for quicker escaping - two semicolons are easy to type
 :imap ;; <Esc>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Delek colour scheme
-colorscheme delek
+" Enable 256 colours
+set t_Co=256
+set term=xterm-256color
+" Enable syntax highlighting
+syntax enable
+" Colour scheme
+colorscheme solarized
+set background=dark
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Moving around, tabs and buffers
@@ -20,18 +27,15 @@ colorscheme delek
 " Useful when moving across long lines
 map j gj
 map k gk
-
 " Map space to / (search) and c-space to ? (backwards search)
 map <space> /
 map <c-space> ?
 map <silent> <leader><cr> :noh<cr>
-
 " Smart way to move btw. windows
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
-
 " Tab configuration
 map <leader>tn :tabnew! %<cr>
 map <leader>te :tabedit
@@ -45,12 +49,11 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set smarttab
-"
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " User interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove any trailing whitespace that is in the file
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
-
 " Set vertical column at 100 chars
 set colorcolumn=100
