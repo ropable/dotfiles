@@ -8,6 +8,20 @@ let g:mapleader = ","
 nmap <leader>w :w!<cr>
 " Remap Esc to ;; for quicker escaping - two semicolons are easy to type
 :imap ;; <Esc>
+" Set vim to never open files readonly.
+set noro
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline#extensions#tabline#enabled=1
+" put filetype in fifth section
+let g:airline_section_y="%Y"
+let g:airline_theme='molokai'
+" Mapping to NERDTree
+map <C-n> :NERDTreeToggle<cr>
+" Tagbar key bindings."
+map <leader>l :TagbarToggle<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors and Fonts
@@ -18,7 +32,7 @@ set term=xterm-256color
 " Enable syntax highlighting
 syntax enable
 " Colour scheme
-colorscheme solarized
+color solarized
 set background=dark
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -49,11 +63,37 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set smarttab
+" Use autoindent and smartindent
+set autoindent
+set smartindent
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " User interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Remove any trailing whitespace that is in the file
+" Highlight search terms
+set hlsearch
+" Remove any trailing whitespace in the file on write
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 " Set vertical column at 100 chars
 set colorcolumn=100
+" No sound on errors
+set noerrorbells
+set visualbell
+" Ignore case when searching, but use smartcase
+set ignorecase
+set smartcase
+" Maintain some lines around the cursor
+set scrolloff=3
+" Turn on line numbering
+set number
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Code folding
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fold based on indent
+set foldmethod=indent
+" Deepest fold is 10 levels
+set foldnestmax=10
+" Don't fold by default
+set nofoldenable
+set foldlevel=1
