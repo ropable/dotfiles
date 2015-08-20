@@ -32,7 +32,7 @@ set term=xterm-256color
 " Enable syntax highlighting
 syntax enable
 " Colour scheme
-color solarized
+color Tomorrow-Night
 set background=dark
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
