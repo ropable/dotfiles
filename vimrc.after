@@ -1,6 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Determine the 'type' of each file opened
+filetype plugin indent on
 " Map leader to , as this is faster to type
 let mapleader = ","
 let g:mapleader = ","
@@ -22,6 +24,10 @@ let g:airline_theme='molokai'
 map <C-n> :NERDTreeToggle<cr>
 " Tagbar key bindings."
 map <leader>l :TagbarToggle<cr>
+" vim-flake8
+"let g:flake8_show_in_gutter=1
+"let flake8_warning_marker='WW'
+"let flake8_error_marker='EE'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors and Fonts
@@ -90,10 +96,10 @@ set number
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Code folding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Fold based on indent
-set foldmethod=indent
-" Deepest fold is 10 levels
-set foldnestmax=10
+set foldenable  " enable folding
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
+set foldmethod=indent   " Fold based on indent
 " Don't fold by default
-set nofoldenable
-set foldlevel=1
+"set nofoldenable
+"set foldlevel=1
