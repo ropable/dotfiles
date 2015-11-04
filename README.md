@@ -22,15 +22,10 @@ Basic bootstraping from a fresh install is as follows (WIP, combines a couple
 of bootstrap scripts together):
 
 ```bash
-$ cd ~
-$ sudo apt-get update && sudo apt-get install byobu vim git mercurial curl python-software-properties rake
-$ wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py && sudo python get-pip.py && sudo pip install virtualenv virtualenvwrapper
-$ mkdir .ssh && cd .ssh && ssh-keygen -f id_rsa -t rsa -N ''
-$ cd ~
-$ curl -Lo- https://bit.ly/janus-bootstrap | bash
-$ git clone git@bitbucket.org:ropable/dotfiles.git
-$ cd dotfiles
-$ ./install.sh
+cd ~
+git clone git@bitbucket.org:ropable/dotfiles.git
+cd dotfiles
+./bootstrap_new_install.sh
 ```
 
 # JavaScript hinting
