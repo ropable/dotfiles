@@ -1,10 +1,10 @@
-# Install Vim and such.
+# Install Vim and rake (for Janus)
 cd ~
 sudo apt-get install vim rake
-# Install Janus.
+# Install Janus (yay for curl-ing scripts from the Internet!)
 curl -Lo- https://bit.ly/janus-bootstrap | bash
 # Make a .janus directory
-mkdir ~/.janus
+mkdir -p ~/.janus
 cd ~/.janus
 # Install vim-flake8
 git clone https://github.com/nvie/vim-flake8.git
@@ -12,3 +12,5 @@ git clone https://github.com/nvie/vim-flake8.git
 git clone https://github.com/rust-lang/rust.vim.git
 # Install vim-airline
 git clone https://github.com/bling/vim-airline.git
+# Install jshint2.vim
+git clone https://github.com/Shutnik/jshint2.vim.git
