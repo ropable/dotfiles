@@ -19,4 +19,4 @@ rm ~/.pypirc
 ln -s "$DIR/pypirc" ~/.pypirc
 # Install Python tools
 cd ~
-wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py && sudo -H python get-pip.py && sudo pip install virtualenv virtualenvwrapper
+wget https://bootstrap.pypa.io/get-pip.py && sudo -H python get-pip.py && sudo pip install virtualenv virtualenvwrapper
