@@ -5,7 +5,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 rm ~/.bashrc
 ln -s "$DIR/bashrc" ~/.bashrc
 rm ~/.bash_aliases
-ln -s "$DIR/bashrc" ~/.bash_aliases
+ln -s "$DIR/bash_aliases" ~/.bash_aliases
 # Switched out for using Janus instead of a bunch of Git submodules.
 rm ~/.vimrc.before && rm ~/.vimrc.after
 ln -s "$DIR/vimrc.before" ~/.vimrc.before && ln -s "$DIR/vimrc.after" ~/.vimrc.after

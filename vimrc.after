@@ -22,10 +22,10 @@ set history=1000
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-airline settings
 let g:airline#extensions#tabline#enabled=1
-" put filetype in fifth section
+" Put filetype in fifth section
 let g:airline_section_y="%Y"
-let g:airline_theme='molokai'
 " Mapping to NERDTree
 map <C-n> :NERDTreeToggle<cr>
 " Tagbar key bindings."
