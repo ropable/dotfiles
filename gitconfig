@@ -7,11 +7,11 @@
     editor = vim
 [merge]
     tool = vimdiff
-	conflictstyle = diff3
+    conflictstyle = diff3
 [mergetool]
-	prompt = false
+    prompt = false
 [alias]
     s = status
-    l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    l = log --color --decorate --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [push]
-	default = current
+    default = current
