@@ -80,6 +80,8 @@ set smarttab
 " Use autoindent and smartindent
 set autoindent
 set smartindent
+" Markdown files only: set textwidth to 80
+autocmd BufRead,BufNewFile *.md setlocal textwidth=80
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " User interface
