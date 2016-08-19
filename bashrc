@@ -1,3 +1,4 @@
+#!/bin/bash
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -120,7 +121,16 @@ _byobu_sourced=1 . /usr/bin/byobu-launch
 # https://unix.stackexchange.com/questions/72086/ctrl-s-hang-terminal-emulator
 stty -ixon
 
-# Put site-specific .bashrc settings in a file called .bashrc.local (gitignored)
-if [ -f bashrc.local ]; then
-    . bashrc.local
+# Put site-specific .bashrc settings in an adjacent file called bashrc.local (gitignored)
+# https://stackoverflow.com/questions/59895/can-a-bash-script-tell-which-directory-it-is-stored-in
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+  DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+done
+DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+if [ -f $DIR/bashrc.local ]; then
+    source $DIR/bashrc.local
 fi
