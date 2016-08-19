@@ -119,3 +119,8 @@ _byobu_sourced=1 . /usr/bin/byobu-launch
 # Disable Software Flow Control
 # https://unix.stackexchange.com/questions/72086/ctrl-s-hang-terminal-emulator
 stty -ixon
+
+# Put site-specific .bashrc settings in a file called .bashrc.local (gitignored)
+if [ -f bashrc.local ]; then
+    . bashrc.local
+fi
