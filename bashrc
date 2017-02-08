@@ -134,3 +134,5 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 if [ -f $DIR/bashrc.local ]; then
     source $DIR/bashrc.local
 fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

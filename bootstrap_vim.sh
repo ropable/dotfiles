@@ -10,7 +10,5 @@ cd ~/.janus
 git clone https://github.com/nvie/vim-flake8.git
 # Install rust.vim
 git clone https://github.com/rust-lang/rust.vim.git
-# Install vim-airline
-git clone https://github.com/bling/vim-airline.git
 # Install jshint2.vim
 git clone https://github.com/Shutnik/jshint2.vim.git
