@@ -82,6 +82,8 @@ set autoindent
 set smartindent
 " Markdown files only: set textwidth to 80
 autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+" Use different tab settings for JavaScript:
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " User interface
