@@ -1,5 +1,5 @@
 # Install bare essentials.
-sudo apt-get update && sudo apt-get install byobu git mercurial curl python-software-properties python-dev rake python-flake8
+sudo apt-get update && sudo apt-get install -y byobu git mercurial curl python-software-properties python-dev rake python-flake8
 # Create symlinks
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 rm ~/.bashrc

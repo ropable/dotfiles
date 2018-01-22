@@ -115,7 +115,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 export PIP_VIRTUALENV_BASE=WORKON_HOME
 
 # Launch byobu
-_byobu_sourced=1 . /usr/bin/byobu-launch
+#_byobu_sourced=1 . /usr/bin/byobu-launch
 
 # Disable Software Flow Control
 # https://unix.stackexchange.com/questions/72086/ctrl-s-hang-terminal-emulator
