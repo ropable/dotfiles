@@ -32,6 +32,7 @@ map <C-n> :NERDTreeToggle<cr>
 map <leader>l :TagbarToggle<cr>
 " Syntastic
 let g:syntastic_python_checkers=["flake8"]
+let g:syntastic_aggregate_errors=1
 " vim-flake8
 "let g:flake8_show_in_gutter=1
 "let flake8_warning_marker='WW'
