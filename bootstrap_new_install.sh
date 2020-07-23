@@ -1,5 +1,10 @@
 # Install bare essentials.
-sudo apt-get update && sudo apt-get install -y byobu git mercurial curl python-software-properties python-dev rake python-flake8
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -y byobu git wget curl software-properties-common python-dev \
+    make build-essential libssl-dev zlib1g-dev \
+    libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev \
+    libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
 # Create symlinks
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 rm ~/.bashrc
@@ -19,4 +24,6 @@ rm ~/.pypirc
 ln -s "$DIR/pypirc" ~/.pypirc
 # Install Python tools
 cd ~
-wget https://bootstrap.pypa.io/get-pip.py && sudo -H python get-pip.py && sudo pip install virtualenv virtualenvwrapper
+curl -sSl https://bootstrap.pypa.io/get-pip.py | python
+curl -Lo- https://pyenv.run | bash
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
