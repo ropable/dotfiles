@@ -109,10 +109,16 @@ fi
 export PYTHONIOENCODING="utf-8"
 
 # Virtualenvwrapper settings
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/projects
-source /usr/local/bin/virtualenvwrapper.sh
-export PIP_VIRTUALENV_BASE=WORKON_HOME
+#export WORKON_HOME=$HOME/.virtualenvs
+#export PROJECT_HOME=$HOME/projects
+#source /usr/local/bin/virtualenvwrapper.sh
+#export PIP_VIRTUALENV_BASE=WORKON_HOME
+
+# Pyenv & Poetry settings
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+source ~/.poetry/env
 
 # Launch byobu
 #_byobu_sourced=1 . /usr/bin/byobu-launch
