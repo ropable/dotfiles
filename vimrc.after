@@ -8,8 +8,8 @@ let mapleader = ","
 let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
-" Remap Esc to ;; for quicker escaping - two semicolons are easy to type
-:imap ;; <Esc>
+" Remap Esc to jk for quicker escaping
+:imap jk <Esc>
 " Set vim to never open files readonly.
 set noro
 " See: http://vim.wikia.com/wiki/Backspace_and_delete_problems
@@ -33,6 +33,7 @@ map <leader>l :TagbarToggle<cr>
 " Syntastic
 let g:syntastic_python_checkers=["flake8"]
 let g:syntastic_aggregate_errors=1
+let g:syntastic_loc_list_height=3
 " vim-flake8
 "let g:flake8_show_in_gutter=1
 "let flake8_warning_marker='WW'
