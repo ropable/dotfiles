@@ -5,6 +5,7 @@
     ui = true
 [core]
     editor = vim
+    attributesfile = ~/.gitattributes
 [merge]
     tool = vimdiff
     conflictstyle = diff3
@@ -15,3 +16,5 @@
     l = log --color --decorate --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [push]
     default = current
+[http]
+    postBuffer = 52428800
