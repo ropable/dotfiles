@@ -18,8 +18,6 @@ rm ~/.jshintrc && rm ~/.jshintignore
 ln -s "$DIR/jshintrc" ~/.jshintrc && ln -s "$DIR/jshintignore" ~/.jshintignore
 rm ~/.gitconfig
 ln -s "$DIR/gitconfig" ~/.gitconfig
-rm ~/.hgrc
-ln -s "$DIR/hgrc" ~/.hgrc
 rm ~/.pypirc
 ln -s "$DIR/pypirc" ~/.pypirc
 # Install Python tools
