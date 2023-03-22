@@ -20,7 +20,7 @@
 [push]
     default = current
 [http]
-	postBuffer = 74865667
+    postBuffer = 74865667
 [filter "lfs"]
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
