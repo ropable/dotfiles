@@ -4,7 +4,7 @@ sudo apt upgrade -y
 sudo apt install -y byobu git wget curl software-properties-common python-dev \
     make build-essential libssl-dev zlib1g-dev \
     libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev \
-    libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+    libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev llibffi-dev liblzma-dev python-openssl
 # Create symlinks
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 rm ~/.bashrc
@@ -18,8 +18,6 @@ rm ~/.jshintrc && rm ~/.jshintignore
 ln -s "$DIR/jshintrc" ~/.jshintrc && ln -s "$DIR/jshintignore" ~/.jshintignore
 rm ~/.gitconfig
 ln -s "$DIR/gitconfig" ~/.gitconfig
-rm ~/.hgrc
-ln -s "$DIR/hgrc" ~/.hgrc
 rm ~/.pypirc
 ln -s "$DIR/pypirc" ~/.pypirc
 # Install Python tools

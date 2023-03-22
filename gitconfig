@@ -6,6 +6,8 @@
 [core]
     editor = vim
     attributesfile = ~/.gitattributes
+[init]
+    defaultBranch = main
 [merge]
     tool = vimdiff
     conflictstyle = diff3
@@ -17,10 +19,10 @@
     unstage = reset HEAD --
 [push]
     default = current
+[http]
+	postBuffer = 74865667
 [filter "lfs"]
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
     required = true
     clean = git-lfs clean -- %f
-[init]
-    defaultBranch = main
