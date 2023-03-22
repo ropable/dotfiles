@@ -7,7 +7,7 @@ filetype plugin indent on
 let mapleader = ","
 let g:mapleader = ","
 " Fast saving
-nmap <leader>w :w!<cr>
+nmap <leader>w :w!<cr>:SyntasticCheck<cr>
 " Remap Esc to jk for quicker escaping
 :imap jk <Esc>
 " Set vim to never open files readonly.
