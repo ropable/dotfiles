@@ -21,4 +21,4 @@ ln -s "$DIR/pypirc" ~/.pypirc
 cd ~
 #curl -sSl https://bootstrap.pypa.io/get-pip.py | python
 curl -Lo- https://pyenv.run | bash
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+curl -sSL https://install.python-poetry.org | python3 -
