@@ -1,10 +1,7 @@
 # Install bare essentials.
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y byobu git wget curl software-properties-common python-dev \
-    make build-essential libssl-dev zlib1g-dev \
-    libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev \
-    libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev llibffi-dev liblzma-dev python-openssl
+sudo apt install -y byobu git wget curl software-properties-common make build-essential
 # Create symlinks
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 rm ~/.bashrc
@@ -22,6 +19,6 @@ rm ~/.pypirc
 ln -s "$DIR/pypirc" ~/.pypirc
 # Install Python tools
 cd ~
-curl -sSl https://bootstrap.pypa.io/get-pip.py | python
+#curl -sSl https://bootstrap.pypa.io/get-pip.py | python
 curl -Lo- https://pyenv.run | bash
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
