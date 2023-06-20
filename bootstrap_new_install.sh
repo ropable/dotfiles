@@ -1,7 +1,7 @@
 # Install bare essentials.
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y byobu git wget curl software-properties-common make build-essential
+sudo apt install -y byobu git wget curl software-properties-common make build-essential flake8
 # Create symlinks
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 rm ~/.bashrc
