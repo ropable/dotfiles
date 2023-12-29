@@ -18,6 +18,8 @@ set backspace=indent,eol,start
 set timeout timeoutlen=500 ttimeoutlen=500
 " History
 set history=1000
+" Set wildignore to make vimgrep ignore certain locations
+set wildignore+=*/node_modules/*,*.venv/*,*/staticfiles/*
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin settings
