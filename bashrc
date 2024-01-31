@@ -108,26 +108,11 @@ fi
 # Python settings
 export PYTHONIOENCODING="utf-8"
 
-# Virtualenvwrapper settings
-#export WORKON_HOME=$HOME/.virtualenvs
-#export PROJECT_HOME=$HOME/projects
-#source /usr/local/bin/virtualenvwrapper.sh
-#export PIP_VIRTUALENV_BASE=WORKON_HOME
-
-# Pyenv & Poetry settings
-export PATH="~/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-source ~/.poetry/env
-
-# Launch byobu
-#_byobu_sourced=1 . /usr/bin/byobu-launch
-
 # Disable Software Flow Control
 # https://unix.stackexchange.com/questions/72086/ctrl-s-hang-terminal-emulator
 stty -ixon
 
-# Put site-specific .bashrc settings in an adjacent file called bashrc.local (gitignored)
+# Put site-specific .bashrc settings in an adjacent file called .bashrc.local (gitignored)
 # https://stackoverflow.com/questions/59895/can-a-bash-script-tell-which-directory-it-is-stored-in
 SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
@@ -137,8 +122,6 @@ while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
 done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-if [ -f $DIR/bashrc.local ]; then
-    source $DIR/bashrc.local
+if [ -f $DIR/.bashrc.local ]; then
+    source $DIR/.bashrc.local
 fi
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
