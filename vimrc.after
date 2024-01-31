@@ -7,7 +7,7 @@ filetype plugin indent on
 let mapleader = ","
 let g:mapleader = ","
 " Fast saving
-nmap <leader>w :w!<cr>
+nmap <leader>w :w!<cr>:SyntasticCheck<cr>
 " Remap Esc to jk for quicker escaping
 :imap jk <Esc>
 " Set vim to never open files readonly.
@@ -18,6 +18,8 @@ set backspace=indent,eol,start
 set timeout timeoutlen=500 ttimeoutlen=500
 " History
 set history=1000
+" Set wildignore to make vimgrep ignore certain locations
+set wildignore+=*/node_modules/*,*.venv/*,*/staticfiles/*
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin settings

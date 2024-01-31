@@ -6,6 +6,8 @@
 [core]
     editor = vim
     attributesfile = ~/.gitattributes
+[init]
+    defaultBranch = main
 [merge]
     tool = vimdiff
     conflictstyle = diff3
@@ -24,5 +26,5 @@
     process = git-lfs filter-process
     required = true
     clean = git-lfs clean -- %f
-[init]
-    defaultBranch = main
+[pull]
+    rebase = false

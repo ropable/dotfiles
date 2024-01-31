@@ -23,3 +23,6 @@ git clone --depth 1 https://github.com/pangloss/vim-javascript.git
 git clone --depth 1 https://github.com/Raimondi/delimitMate.git
 # vim-closetag
 git clone --depth 1 https://github.com/alvan/vim-closetag.git
+
+# Issue with 'Error detected while processing...'
+echo "Visit https://github.com/carlhuda/janus/issues/716"
