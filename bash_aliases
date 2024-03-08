@@ -3,7 +3,7 @@ function mcd() {
 }
 
 # some more ls aliases
-alias ll='exa -la'
+alias ll='exa -lah'
 alias lt='exa -Tl --ignore-glob="*__pycache__*"'
 alias la='ls -A'
 alias l='ls -CF'
