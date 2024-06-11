@@ -19,7 +19,9 @@ set timeout timeoutlen=500 ttimeoutlen=500
 " History
 set history=1000
 " Set wildignore to make vimgrep ignore certain locations
-set wildignore+=*/node_modules/*,*.venv/*,*/staticfiles/*
+set wildignore+=*/node_modules/*,*.venv/*,*/staticfiles/*,*/media/*,*/__pycache__/
+" Ignore defined filetypes
+set wildignore+=*.png,*.jpg
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin settings
@@ -87,7 +89,8 @@ set smarttab
 set autoindent
 set smartindent
 " Markdown files only: set textwidth to 80
-autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+"autocmd BufRead,BufNewFile *.md setlocal textwidth=80
+autocmd Filetype markdown setlocal syntax=OFF
 " Use different tab settings for JavaScript:
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 
