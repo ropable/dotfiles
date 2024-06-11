@@ -102,11 +102,14 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+# Python settings
+export PYTHONIOENCODING="utf-8"
+
 # Disable Software Flow Control
 # https://unix.stackexchange.com/questions/72086/ctrl-s-hang-terminal-emulator
 stty -ixon
 
-# Put site-specific .bashrc settings in an adjacent file called bashrc.local (gitignored)
+# Put site-specific .bashrc settings in an adjacent file called .bashrc.local (gitignored)
 # https://stackoverflow.com/questions/59895/can-a-bash-script-tell-which-directory-it-is-stored-in
 SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
@@ -116,6 +119,6 @@ while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
 done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
-if [ -f $DIR/bashrc.local ]; then
-    source $DIR/bashrc.local
+if [ -f $DIR/.bashrc.local ]; then
+    source $DIR/.bashrc.local
 fi

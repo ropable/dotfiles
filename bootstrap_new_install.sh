@@ -22,3 +22,5 @@ ln -s "$DIR/pypirc" ~/.pypirc
 cd ~
 curl -Lo- https://pyenv.run | bash
 curl -sSL https://install.python-poetry.org | python3 -
+# sudo without password
+echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER
