@@ -1,6 +1,9 @@
-# Symlink vimrc.before and after to the home dir.
+rm ~/.vimrc.before ~/.vimrc.after
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+# Symlink vimrc.before and vimrc.after to the home dir.
 ln -s vimrc.before ~/.vimrc.before
-ln -s vimrc.after ~/.vimrc.after
+ln -s "$DIR/vimrc.before" ~/.vimrc.before
+ln -s "$DIR/vimrc.after" ~/.vimrc.after
 # Install Vim and rake (for Janus)
 cd ~
 sudo apt-get install vim rake
@@ -17,8 +20,6 @@ git clone --depth 1 https://github.com/rust-lang/rust.vim.git
 git clone --depth 1 https://github.com/Shutnik/jshint2.vim.git
 # vim-javascript
 git clone --depth 1 https://github.com/pangloss/vim-javascript.git
-# auto-pairs
-#git clone --depth 1 https://github.com/jiangmiao/auto-pairs.git
 # delimitMate (worked better than auto-pairs)
 git clone --depth 1 https://github.com/Raimondi/delimitMate.git
 # vim-closetag

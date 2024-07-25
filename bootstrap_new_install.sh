@@ -18,7 +18,7 @@ rm ~/.gitconfig
 ln -s "$DIR/gitconfig" ~/.gitconfig
 rm ~/.pypirc
 ln -s "$DIR/pypirc" ~/.pypirc
-# Install Python tools
+# Install Python tools (pyenv, Poetry)
 cd ~
 curl -Lo- https://pyenv.run | bash
 curl -sSL https://install.python-poetry.org | python3 -
