@@ -6,7 +6,7 @@
 [core]
     editor = vim
     attributesfile = ~/.gitattributes
-    autocrlf = true
+    autocrlf = false
 [init]
     defaultBranch = main
 [merge]
