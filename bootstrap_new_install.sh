@@ -16,6 +16,8 @@ rm ~/.jshintrc && rm ~/.jshintignore
 ln -s "$DIR/jshintrc" ~/.jshintrc && ln -s "$DIR/jshintignore" ~/.jshintignore
 rm ~/.gitconfig
 ln -s "$DIR/gitconfig" ~/.gitconfig
+rm ~/.prettierrc
+ln -s "$DIR/prettierrc" ~/.prettierrc
 
 # sudo without password
 echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER
