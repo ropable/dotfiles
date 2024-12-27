@@ -4,9 +4,9 @@ index-servers=
     test
 
 [test]
-repository = https://testpypi.python.org/pypi
-username = ropable
+repository = https://upload.test.pypi.org/legacy/
+username = ashley_felton_dpaw
 
 [pypi]
-repository = https://pypi.python.org/pypi
-username = ropable
+repository = https://upload.pypi.org/legacy/
+username = ashley_felton_dpaw
