@@ -3,3 +3,5 @@ function mcd() {
 }
 
 alias ll='eza -lah'
+
+alias bat='batcat'
