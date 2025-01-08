@@ -17,9 +17,11 @@ curl https://pyenv.run | bash
 # - https://python-poetry.org/docs/managing-environments/
 # - https://python-poetry.org/docs/configuration/
 curl -sSL https://install.python-poetry.org | python3 -
-# Remember to set:
-# poetry config virtualenvs.prefer-active-python true
-# poetry config virtualenvs.in-project true
+# Poetry config:
+poetry config virtualenvs.prefer-active-python true
+poetry config virtualenvs.in-project true
+# Install the Poetry Shell plugin: https://github.com/python-poetry/poetry-plugin-shell
+poetry self add poetry-plugin-shell
 
 # Create symlinks
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
