@@ -122,3 +122,5 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 if [ -f $DIR/.bashrc.local ]; then
     source $DIR/.bashrc.local
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
