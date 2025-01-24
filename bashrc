@@ -124,3 +124,17 @@ if [ -f $DIR/.bashrc.local ]; then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# ls aliases
+alias ll='eza -lah'
+alias lt='eza -Tl --ignore-glob="*__pycache__*"'
+alias la='ls -A'
+alias l='ls -CF'
+
+# bat
+alias bat='batcat'
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
