@@ -1,3 +1,4 @@
+# NOTE: deprecated in favour of NeoVim.
 rm ~/.vimrc.before ~/.vimrc.after
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Symlink vimrc.before and vimrc.after to the home dir.
