@@ -104,6 +104,7 @@ fi
 
 # Python settings
 export PYTHONIOENCODING="utf-8"
+export PYTHONWARNINGS="d"
 
 # Disable Software Flow Control
 # https://unix.stackexchange.com/questions/72086/ctrl-s-hang-terminal-emulator
