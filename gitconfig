@@ -16,6 +16,7 @@
     prompt = false
 [alias]
     s = status
+    d = diff
     l = log --color --decorate --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     unstage = reset HEAD --
 [push]
