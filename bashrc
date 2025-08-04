@@ -82,10 +82,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-#alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -123,17 +119,6 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 if [ -f $DIR/.bashrc.local ]; then
     source $DIR/.bashrc.local
 fi
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# ls aliases
-alias ll='eza -lah'
-alias lt='eza -Tl --ignore-glob="*__pycache__*"'
-alias la='ls -A'
-alias l='ls -CF'
-
-# bat
-alias bat='batcat'
 
 # fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
