@@ -7,6 +7,10 @@ sudo apt install -y byobu git wget curl bat eza ripgrep zip unzip
 # fzf - https://github.com/junegunn/fzf#using-git
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+# Astral Python tools: uv, ruff, ty
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv tool install ruff@latest
+curl -LsSf https://astral.sh/ty/install.sh | sh
 
 # Create symlinks
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
