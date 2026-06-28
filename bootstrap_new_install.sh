@@ -11,6 +11,8 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 curl -LsSf https://astral.sh/uv/install.sh | sh
 uv tool install ruff@latest
 curl -LsSf https://astral.sh/ty/install.sh | sh
+# Mise
+curl https://mise.run | sh
 
 # Create symlinks
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
