@@ -125,6 +125,9 @@ if [ -f $DIR/.bashrc.local ]; then
     source $DIR/.bashrc.local
 fi
 
+# Neovim
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
 # fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # Set up fzf key bindings and fuzzy completion

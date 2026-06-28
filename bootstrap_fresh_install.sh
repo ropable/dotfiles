@@ -13,6 +13,10 @@ uv tool install ruff@latest
 curl -LsSf https://astral.sh/ty/install.sh | sh
 # Mise
 curl https://mise.run | sh
+# Neovim
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+git clone https://github.com/ropable/nvim-config ~/.config/nvim
 
 # Create symlinks
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
