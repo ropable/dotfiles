@@ -10,15 +10,20 @@
 # See bash(1) for more options
 HISTCONTROL=ignoreboth:erasedups
 
+# History timestamps
+HISTTIMEFORMAT="%F %T "
+
 # Append to the history file, don't overwrite it
 shopt -s histappend
-# Call history -a every time the prompt is shown
-# Reference: https://web.archive.org/web/20090815205011/http://www.cuberick.com/2008/11/update-bash-history-in-realtime.html
-PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=2000
-HISTFILESIZE=4000
+# After each command:
+# 1. append new history lines
+# 2. reload history from file
+PROMPT_COMMAND="history -a; history -n;$PROMPT_COMMAND"
+
+# Set history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=10000
+HISTFILESIZE=400000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
