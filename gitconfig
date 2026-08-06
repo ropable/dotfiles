@@ -30,3 +30,5 @@
     clean = git-lfs clean -- %f
 [pull]
     rebase = false
+[fetch]
+    prune = true
